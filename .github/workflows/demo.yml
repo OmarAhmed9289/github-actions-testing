@@ -35,10 +35,10 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      # - name: Download Artifact-fils 
-      #   uses: actions/download-artifact@v4
-      #   with: 
-      #     name: my-artifact
+      - name: Download Artifact-fils 
+        uses: actions/download-artifact@v4
+        with: 
+          name: my-artifact
       - name: Output Contents
         run: ls 
       - name: Deploy
